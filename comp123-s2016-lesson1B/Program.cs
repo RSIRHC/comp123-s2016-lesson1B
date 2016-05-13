@@ -13,12 +13,23 @@ using System.Threading.Tasks;
  * 
  * Description: This program demonstrates Github and version control
  * 
- * Version: 0.2 - Added GetUserName method
+ * Version: 0.3 - Updated comments for driver class Program
  */
 namespace comp123_s2016_lesson1B
 {
+    /**
+     * This is the driver class for our program 
+     * 
+     * @class rogram 
+     */
     class Program
     {
+        /**
+         * Main Method for class Program 
+         * 
+         * @param {string[]} args
+         * @constructor Main
+         */
         static void Main(string[] args)
         {
             GetUserName(); 
