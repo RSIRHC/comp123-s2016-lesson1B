@@ -13,7 +13,7 @@ using System.Threading.Tasks;
  * 
  * Description: This program demonstrates Github and version control
  * 
- * Version: 0.4 - extracted outputStrigToConsole from GetUserName method
+ * Version: 0.4.1 - [bug fixed] extracted outputStrigToConsole from GetUserName method
  */
 namespace comp123_s2016_lesson1B
 {
@@ -74,9 +74,6 @@ namespace comp123_s2016_lesson1B
             {
                 Console.Write(outputString); 
             }
-
-
-            Console.Write(outputString);
 
             return outputString; 
         }
