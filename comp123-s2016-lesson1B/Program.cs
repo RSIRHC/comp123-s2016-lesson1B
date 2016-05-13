@@ -13,7 +13,7 @@ using System.Threading.Tasks;
  * 
  * Description: This program demonstrates Github and version control
  * 
- * Version: 0.3 - Updated comments for driver class Program
+ * Version: 0.4 - extracted outputStrigToConsole from GetUserName method
  */
 namespace comp123_s2016_lesson1B
 {
@@ -45,13 +45,40 @@ namespace comp123_s2016_lesson1B
         {
             //Initializa variables
             string userName = "";
-            Console.Write("Enter UserName: ");
+
+            OutputStringToConsole("Enter UserName: ", false);
             userName = Console.ReadLine();
 
-            Console.WriteLine("/n=========================");
-            Console.WriteLine("You Entered: " + userName);
+            Console.WriteLine("\n=========================");
+            Console.WriteLine("You Entered: " + userName + "\n");
 
-            return userName; 
+            return userName;
+        }
+
+        /**
+         * This method writes a string to the console. Parameters allow the user to choose to add a newline character.
+         * 
+         * @method OutputStringToConsole
+         * @param {string} outPutString
+         * @param {bool} hasNewLine
+         * @return {string} outputString
+         */
+
+        private static string OutputStringToConsole(string outputString, bool hasNewLine)
+        {
+            if (hasNewLine)
+            {
+                Console.WriteLine(outputString);
+            }
+            else
+            {
+                Console.Write(outputString); 
+            }
+
+
+            Console.Write(outputString);
+
+            return outputString; 
         }
     }
 }
