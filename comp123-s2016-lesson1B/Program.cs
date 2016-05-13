@@ -8,12 +8,12 @@ using System.Threading.Tasks;
 /*
  * Author:Christopher Ritchil 
  * Date: May 13, 2016
- * Date Modified: 
- * Student ID: 
+ * Date Modified: May 13, 2016
+ * Student ID: 300702644
  * 
  * Description: This program demonstrates Github and version control
  * 
- * Version: 0.5 - Added Lesson1UnitTest
+ * Version: 0.6 - Refactored OutputStringToConsole
  */
 namespace comp123_s2016_lesson1B
 {
@@ -66,14 +66,10 @@ namespace comp123_s2016_lesson1B
 
         public static string OutputStringToConsole(string outputString, bool hasNewLine)
         {
-            if (hasNewLine)
-            {
-                Console.WriteLine(outputString);
-            }
-            else
-            {
-                Console.Write(outputString); 
-            }
+            //Refactored using the ternary operator
+
+            string suffixString = hasNewLine ? "\n" : "";
+            Console.Write(outputString + suffixString);
 
             return outputString; 
         }
