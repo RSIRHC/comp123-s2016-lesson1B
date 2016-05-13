@@ -13,7 +13,7 @@ using System.Threading.Tasks;
  * 
  * Description: This program demonstrates Github and version control
  * 
- * Version: 0.4.1 - [bug fixed] extracted outputStrigToConsole from GetUserName method
+ * Version: 0.5 - Added Lesson1UnitTest
  */
 namespace comp123_s2016_lesson1B
 {
@@ -22,7 +22,7 @@ namespace comp123_s2016_lesson1B
      * 
      * @class rogram 
      */
-    class Program
+    public class Program
     {
         /**
          * Main Method for class Program 
@@ -64,7 +64,7 @@ namespace comp123_s2016_lesson1B
          * @return {string} outputString
          */
 
-        private static string OutputStringToConsole(string outputString, bool hasNewLine)
+        public static string OutputStringToConsole(string outputString, bool hasNewLine)
         {
             if (hasNewLine)
             {
